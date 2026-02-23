@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Atm System</title>
+</head>
+<body>
+<h2>Welcome to ATM System</h2>
+<h3>How can I help you today?</h3><br>
+
+<form action="/create" method="POST">
+  <input type="text" name="pin"  placeholder="Create Pin">
+  <input type="text" name="balance" placeholder="Enter Your Balance">
+  <button>Create</button>
+</form>
+
+<form action="/checkbalance" method="POST">
+  <input type="text" name="pin"  placeholder="Enter your Pin">
+  <button>Check</button>
+</form>
+
+<form action="/withdraw" method="POST">
+  <input type="text" name="pin"  placeholder="Enter Your Pin">
+  <input type="number" name="amount" placeholder="Enter Amount">
+  <button>Withdraw</button>
+</form>
+
+<form action="/deposite" method="POST">
+  <input type="text" name="pin"  placeholder="Enter Your Pin">
+  <input type="number" name="amount" placeholder="Enter Amount">
+  <button>Deposite</button>
+</form>
+
+<a href="/logout">Logout</a>
+</body>
+</html>
